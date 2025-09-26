@@ -62,6 +62,8 @@ img,svg{display:block;max-width:100%}
 .reveal.show{opacity:1;transform:none}
 
 /* ---------- Header ---------- */
+#home{padding-top:40px}
+
 .header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .header-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
@@ -100,7 +102,7 @@ img,svg{display:block;max-width:100%}
 
 /* ---------- Desktop typography / spacing tweaks ---------- */
 h1{margin:0}
-.hero-title{font-size:28px;line-height:1.2;font-weight:800}
+.hero-title{font-size:28px;line-height:1.2;font-weight:800;margin-top:16px}
 @media(min-width:768px){.hero-title{font-size:34px}}
 @media(min-width:1024px){.hero-title{font-size:42px}}
 @media(min-width:1440px){.hero-title{font-size:48px}}
@@ -266,7 +268,7 @@ footer{border-top:1px solid var(--line);color:#9aa3b2}
         <div style="margin-top:16px">
           <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-end">
             <div><div class="small">Текущая цель</div><div style="font-weight:700">1 000 000 ₽</div></div>
-            <div style="text-align:right"><div class="small">Достигнуто</div><div id="progressLabel" style="font-weight:700">0 ₽ (0%)</div></div>
+            <div style="text-align:right"><div class="small">Достигнуто</div><div id="progressLabel" style="font-weight:700; margin-top:4px">0 ₽ (0%)</div></div>
           </div>
           <div class="progress-wrap" style="margin-top:8px"><div id="progressBar" class="progress-bar"></div></div>
           <div class="small" style="margin-top:6px">Автообновление из /progress.json или локального хранилища.</div>
